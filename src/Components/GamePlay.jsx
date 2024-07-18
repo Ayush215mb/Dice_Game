@@ -69,9 +69,7 @@ const GamePlay = () => {
             {rules ? `Hide rules` : `Show rules`}
           </Outline_btn>
         ) : (
-          <Button onClick={ShowRules}>
-            {rules ? `Hide rules` : `Show rules`}
-          </Button>
+          <Buto onClick={ShowRules}>{rules ? `Hide rules` : `Show rules`}</Buto>
         )}
       </div>
 
