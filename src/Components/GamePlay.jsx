@@ -3,7 +3,7 @@ import TotalScore from "./TotalScore";
 import NumberSelector from "./NumberSelector";
 import styled from "styled-components";
 import RoleDice from "./RoleDice";
-import { Button } from "../Styled/Button";
+import { Button, Outline_btn } from "../Styled/Button";
 import Rules from "./Rules";
 
 const GamePlay = () => {
@@ -64,11 +64,15 @@ const GamePlay = () => {
 
       <div className="Btns">
         <Button onClick={ResestScore}>Reset Score</Button>
-        <Button onClick={ShowRules}>
-          {rules ? `Hide rules` : `Show rules`}
-        </Button>
-
-        {/* <Rules /> */}
+        {rules ? (
+          <Outline_btn onClick={ShowRules}>
+            {rules ? `Hide rules` : `Show rules`}
+          </Outline_btn>
+        ) : (
+          <Button onClick={ShowRules}>
+            {rules ? `Hide rules` : `Show rules`}
+          </Button>
+        )}
       </div>
 
       <div className="Btns">{rules ? <Rules /> : <div></div>}</div>
