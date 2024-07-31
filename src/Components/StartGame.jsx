@@ -33,9 +33,55 @@ const Container = styled.div`
       white-space: nowrap;
     }
   }
+
+    @media (max-width: 1024px) {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    padding: 20px;
+
+    .content {
+      h1 {
+        font-size: 72px;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      h1 {
+        font-size: 48px;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      h1 {
+        font-size: 32px;
+      }
+    }
+  }
 `;
 
 const Image = styled.img`
   width: 649px;
   height: 522px;
+
+    @media (max-width: 1024px) {
+    width: 80%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: 480px) {
+    width: 100%;
+    height: auto;
+  }
 `;
