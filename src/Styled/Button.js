@@ -18,6 +18,18 @@ export const Button = styled.button`
     border: 1px solid black;
     transition: 0.3s background ease-in;
   }
+
+    @media (max-width: 768px) {
+    padding: 8px 16px;
+    min-width: 180px;
+    font-size: 14px;
+  }
+
+  @media (max-width: 480px) {
+    padding: 6px 12px;
+    min-width: 150px;
+    font-size: 12px;
+  }
 `;
 
 export const Outline_btn = styled(Button)`
