@@ -29,4 +29,31 @@ const DiceCont = styled.div`
     margin-top: 30px;
     font-weight: 600;
   }
+
+    @media (max-width: 768px) {
+    margin-top: 40px;
+    img {
+      height: 200px;
+      width: 200px;
+    }
+
+    p {
+      font-size: 24px;
+      margin-top: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    margin-top: 30px;
+
+    img {
+      height: 150px;
+      width: 150px;
+    }
+
+    p {
+      font-size: 20px;
+      margin-top: 15px;
+    }
+  }
 `;
