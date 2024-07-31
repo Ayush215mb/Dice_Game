@@ -5,13 +5,13 @@ const Rules = () => {
     <Rulescont>
       <h3>How to play dice game?</h3>
       <ul>
-        <li>Select any number</li>
-        <li>Click on dice image</li>
+        <li>Select any number,</li>
+        <li>Click on dice image,</li>
         <li>
           After clicking on dice if selected number is equal to dice number you
-          will get same point as dice
+          will get same point as dice,
         </li>
-        <li>if you get wrong guess then 2 point will be dedcuted</li>
+        <li>if you get it wrong then 1 point will be dedcuted.</li>
       </ul>
     </Rulescont>
   );
