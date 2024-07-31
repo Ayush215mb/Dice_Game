@@ -95,4 +95,27 @@ const MainContainer = styled.main`
     margin-block: 10px;
     gap: 10px;
   }
+
+    @media (max-width: 768px) {
+    .top_cont {
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .Btns {
+      flex-direction: row;
+      gap: 5px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .top_cont {
+      gap: 10px;
+    }
+
+    .Btns {
+      flex-direction: row;
+      gap: 5px;
+    }
+  }
 `;
