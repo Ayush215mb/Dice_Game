@@ -35,4 +35,33 @@ const Rulescont = styled.div`
   li {
     padding-block: 5px;
   }
+
+    @media (max-width: 768px) {
+    padding: 15px;
+    max-width: 90%;
+    margin-block: 20px;
+
+    ul {
+      padding: 8px;
+    }
+
+    li {
+      padding-block: 4px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    padding: 15px;
+    max-width: 100%;
+    margin-block: 15px;
+    margin-inline: 10px;
+
+    ul {
+      padding: 6px;
+    }
+
+    li {
+      padding-block: 3px;
+    }
+  }
 `;
